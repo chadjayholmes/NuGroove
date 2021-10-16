@@ -37,7 +37,6 @@ document.getElementById("submit").addEventListener("click", function(event) {
         })
         .then(function(json){
 
-
             let album1 = ""
             album1 += '<img class="album-image" src="' + json.topalbums.album[1].image[3]['#text'] + '" width="300px">'
             document.getElementById('image-space').innerHTML = album1
@@ -46,9 +45,9 @@ document.getElementById("submit").addEventListener("click", function(event) {
             albumGrid = '<div class="row grid-title"><div class="col-8 grid-title"><h2>Top Albums</h2></div></div>'
             for(let i = 0; i < 6; i += 3){
                 console.log(json.topalbums.album[i].image[3]['#text'])
-                albumGrid += '<div class="row grid-row"><div class="col grid-item"><img src="' + json.topalbums.album[i].image[3]['#text'] + '" width="300px"/></div>' +
-                    '<div class="col grid-item"><img src="' + json.topalbums.album[i+1].image[3]['#text'] + '" width="300px"/></div>' +
-                    '<div class="col grid-item"><img src="' + json.topalbums.album[i+2].image[3]['#text'] + '" width="300px"/></div></div>'
+                albumGrid += '<div class="row grid-row"><div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 grid-item"><img class="ablum-pic" src="' + json.topalbums.album[i].image[3]['#text'] + '" width="300px"/></div>' +
+                    '<div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 grid-item"><img class="ablum-pic" src="' + json.topalbums.album[i+1].image[3]['#text'] + '" width="300px"/></div>' +
+                    '<div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 grid-item"><img class="ablum-pic" src="' + json.topalbums.album[i+2].image[3]['#text'] + '" width="300px"/></div></div>'
             }
             document.getElementById("album-grid").innerHTML = albumGrid;
 

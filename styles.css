@@ -147,13 +147,11 @@ DYNAMIC OBJECT STYLING BELOW
 }
 
 .grid-row {
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .grid-item{
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+    justify-content: center;
 }
 
 .footer-text {
@@ -162,6 +160,33 @@ DYNAMIC OBJECT STYLING BELOW
     font-size: 20px;
 }
 
-a:link{
+a:link, a:visited{
   color: white;
+}
+
+@media only screen and (max-width: 992px) {
+    .search-space{
+        margin-top: 50px;
+    }
+
+    .results {
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .input-test{
+        font-size: 15px;
+    }
+
+    .summary-text{
+        text-align: center;
+    }
+
+    .album-pic {
+        margin-left: auto;
+    }
+
+    .title{
+        justify-content: center;
+    }
 }
