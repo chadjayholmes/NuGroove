@@ -1,0 +1,167 @@
+/*
+HERE IS WHERE THE HEADER STYLE GOES BELOW
+ */
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+* {
+    font-family: "San Francisco";
+    background-color: #f36b1c;
+}
+
+
+.header {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.logo {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bolder;
+    background-color: #ffffff;
+    color: #f36b1c;
+}
+
+.colored {
+    height: 36px;
+    width: 100%;
+}
+
+/*
+HERE IS WHERE THE STATIC OBJECTS STYLE GOES BELOW
+ */
+
+.search-space {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+.image-space{
+    background-color: white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+
+.album-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: 60px;
+}
+
+.input-test {
+    width: 80%;
+    height: 70px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+
+.submit{
+    width: 80%;
+    margin-top: 5px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: white;
+}
+
+.page {
+    margin-left: 0px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-space {
+    justify-content: space-around;
+}
+
+
+/*
+DYNAMIC OBJECT STYLING BELOW
+ */
+
+.summary-row {
+    padding-left: 7.5px;
+    justify-content: flex-start;
+    color: white;
+}
+
+.summary-col {
+    background-color: white;
+    color: #f36b1c;
+
+}
+
+.summary-text {
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.similar-title{
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.results {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.artist-info {
+    padding-top: 80px;
+    background-color: white;
+}
+
+.grid-title{
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.grid-row {
+    justify-content: space-around;
+}
+
+.grid-item{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer-text {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+a:link{
+  color: white;
+}
